@@ -14,7 +14,7 @@ app.get("/all", (req, res) => {
 });
 
 app.get("/top", (req, res) => {
-  let query = data.filter((item) => !!item.top_10);
+  let query = data.filter((item) => !!item.top_10); // filter items to oonly send back top_10
   res.send(query);
 });
 
